@@ -1,7 +1,7 @@
 const cluster = require('cluster');
 console.log(`Master pid: ${process.pid}`)
 cluster.setupMaster({
-    exec: __dirname + '/servicio-receta.js'
+    exec: __dirname + '/servicio-recetas.js'
 });
 
 cluster.fork();
